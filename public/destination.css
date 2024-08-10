@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+}
+
+.destination {
+    text-align: center;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.destination h1 {
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.destination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-info img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.destination-details {
+    max-width: 800px;
+    text-align: left;
+}
+
+.destination-details h2 {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.destination-details p, .destination-details ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.destination-details ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #00aaff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
