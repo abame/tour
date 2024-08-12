@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Tour Packages</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffefba, #ffffff);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff7f50;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #ff7f50;
+            color: white;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .comparison-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #ff7f50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Compare Tour Packages for <%= destination %></h1>
+            <p>Select the best tour package for your needs</p>
+        </div>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Agency</th>
+                    <th>Package Name</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Highlights</th>
+                    <th>Rating</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% packages.forEach(package => { %>
+                <tr>
+                    <td><%= package.agency %></td>
+                    <td><%= package.name %></td>
+                    <td><%= package.duration %> days</td>
+                    <td>$<%= package.price %></td>
+                    <td><%= package.highlights.join(', ') %></td>
+                    <td><%= package.rating %> / 5</td>
+                    <td><a href="<%= package.link %>" class="btn-primary">View Package</a></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
