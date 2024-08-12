@@ -52,11 +52,9 @@ jobs:
           yarn generate-static
 
       - name: Upload artifact
-        uses: actions/upload-artifact@master
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
-          name: website
           path: static
-          if-no-files-found: error
 
   # Deployment job
   deploy:
@@ -67,14 +65,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: website
-          path: .
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
