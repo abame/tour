@@ -1,0 +1,26 @@
+{
+  "name": "tourcompare",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "type": "module",
+  "packageManager": "yarn@4.2.2",
+  "scripts": {
+    "build": "tsc",
+    "generate-static": "node dist/generate-static.js"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "16.5.2",
+    "contentful": "10.11.8",
+    "ejs": "3.1.10",
+    "fs-extra": "11.2.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "3.1.5",
+    "@types/express": "4.17.21",
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "20.14.2",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.4.5"
+  }
+}

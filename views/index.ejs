@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourCompare - <%- title %></title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <section class="hero">
+            <h1>Welcome to TourCompare</h1>
+            <p>Find and compare the best tour packages for your next adventure.</p>
+            <a href="/destination" class="cta-button">Explore Destinations</a>
+        </section>
+        <section id="packages" class="packages">
+            <h2>Popular Destinations</h2>
+            <div class="package-list">
+                <% for(let i=0; i < destinations.length; i++) { %>
+                    <div class="package-item">
+                        <img src="https:<%= destinations[1].fields.image.fields.file.url %>" alt="Destination 1">
+                        <h3><%= destinations[i].fields.title %> </h3>
+                        <%- destinations[i].fields.htmlDescription %>
+                        <a href="comparison.html" class="details-button">View Packages</a>
+                    </div>
+                <% } %>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

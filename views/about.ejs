@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourCompare - <%- title %></title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <section class="about">
+            <h1>About TourCompare</h1>
+            <%- aboutUs %>
+            <h2>Our Story</h2>
+            <%- ourStory %>
+            <h2>Why Choose Us?</h2>
+            <%- whyUs %>
+            <% if(ourTeam) { %>
+                <h2>Meet the Team</h2>
+                <div class="team">
+                    <% for(let i=0; i < ourTeam.length; i++) { %>
+                        <div class="team-member">
+                            <img src="https:<%= ourTeam[1].fields.image.fields.file.url %>" alt="<%= ourTeam[i].fields.name %>">
+                            <h3><%= ourTeam[i].fields.name %></h3>
+                            <p><%= ourTeam[i].fields.role %></p>
+                        </div>
+                    <% } %>
+                </div>
+            <% } %>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
