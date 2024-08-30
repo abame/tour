@@ -784,24 +784,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tourcompare@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "tourcompare@workspace:."
-  dependencies:
-    "@contentful/rich-text-html-renderer": "npm:16.5.2"
-    "@types/ejs": "npm:3.1.5"
-    "@types/express": "npm:4.17.21"
-    "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:20.14.2"
-    contentful: "npm:10.11.8"
-    ejs: "npm:3.1.10"
-    fs-extra: "npm:11.2.0"
-    ts-node: "npm:10.9.2"
-    tsconfig-paths: "npm:4.2.0"
-    typescript: "npm:5.4.5"
-  languageName: unknown
-  linkType: soft
-
 "ts-node@npm:10.9.2":
   version: 10.9.2
   resolution: "ts-node@npm:10.9.2"
@@ -898,6 +880,24 @@ __metadata:
   checksum: 10c0/bdc36fb8095d3b41df197f5fb6f11e3a26adf4059df3213e3baa93810d8f0cc76f9a74aaefc18b73e91fe7e19154ed6f134eda6fded2e0f1c8d2272ed2d2d391
   languageName: node
   linkType: hard
+
+"voyageversus@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "voyageversus@workspace:."
+  dependencies:
+    "@contentful/rich-text-html-renderer": "npm:16.5.2"
+    "@types/ejs": "npm:3.1.5"
+    "@types/express": "npm:4.17.21"
+    "@types/fs-extra": "npm:11.0.4"
+    "@types/node": "npm:20.14.2"
+    contentful: "npm:10.11.8"
+    ejs: "npm:3.1.10"
+    fs-extra: "npm:11.2.0"
+    ts-node: "npm:10.9.2"
+    tsconfig-paths: "npm:4.2.0"
+    typescript: "npm:5.4.5"
+  languageName: unknown
+  linkType: soft
 
 "yn@npm:3.1.1":
   version: 3.1.1
