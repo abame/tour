@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Exo2';
+    src: URL('fonts/Exo_2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSansExtraCondensed';
+    src: URL('fonts/Fira_Sans_Extra_Condensed.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Exo2', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
@@ -19,7 +29,12 @@ header {
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Exo2', cursive;
+    width: 9rem;
+}
+
+header .logo img {
+    width: 100%;
 }
 
 header nav a {
