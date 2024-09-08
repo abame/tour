@@ -1,11 +1,61 @@
+.background {
+    background-image: url("images/background.jpg");
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10rem;
+}
+
+header {
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+main {
+    margin-top: -16rem;
+}
+
+.text {
+    width: 54%;
+}
+
+.hero .text p {
+    margin: 0;
+}
+
+.subscribe {
+    margin-left: 2rem;
+}
+
+.subscribe input[type="text"] {
+    width: 22rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    padding: 1rem;
+}
+
+.subscribe input[type="submit"] {
+    width: 8rem;
+    height: 5rem;
+    background: #ffac00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 .hero {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #ffcc33, #ff6347);
-    color: #fff;
+    opacity: 0.75;
+    padding: 35px 20px;
+    background: linear-gradient(10deg, #c1c1c1, #ffffff);
+    color: #000;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 8rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
 .hero h1 {
@@ -95,4 +145,53 @@
 
 .details-button:hover {
     background-color: #007bb5;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        margin-top: -3rem;
+        padding: 20px;
+    }
+    .hero .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: -1rem 1rem 1rem 1rem;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        margin: 10px 0;
+    }
+    .hero {
+        margin-top: -10rem;
+    }
+    .subscribe {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .subscribe input[type="text"] {
+        width: 90%;
+    }
+    .package-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 512px) {
+    .hero {
+        margin-top: -15rem;
+    }
+    .packages {
+        margin-top: -3rem;
+    }
 }

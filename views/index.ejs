@@ -10,11 +10,17 @@
 </head>
 <body>
     <%- include('partials/header') %>
+    <div class="background"></div>
     <main>
         <section class="hero">
-            <h1>Welcome to Voyage Versus</h1>
-            <p>Find and compare the best tour packages for your next adventure.</p>
-            <a href="/destination" class="cta-button">Explore Destinations</a>
+            <div class="text">
+                <p>Finding the perfect travel package is hard. We are here to help!</p>
+                <p>If you are interested in what we have to offer, sign up and be the first one to get information and promotions.</p>
+            </div>
+            <div class="subscribe">
+                <input type="text" placeholder="Insert Email Address"/>
+                <input type="submit" value="Sign Up"/>
+            </div>
         </section>
         <section id="packages" class="packages">
             <h2>Popular Destinations</h2>
