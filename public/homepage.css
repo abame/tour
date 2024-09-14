@@ -44,11 +44,11 @@ main {
     color: #fff;
     font-weight: bolder;
     font-size: larger;
+    cursor: pointer;
 }
 
 .hero {
     text-align: center;
-    opacity: 0.75;
     padding: 35px 20px;
     background: linear-gradient(10deg, #c1c1c1, #ffffff);
     color: #000;
