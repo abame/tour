@@ -58,6 +58,13 @@ async function generatePages() {
       title: contactPageEntry.fields.title
     }, path.join(outputDir, 'contact.html'));
 
+    // Fetch data for privacy policy page
+    const privacyPolicyEntry = await getEntry<ContentfulFields>(process.env.PRIVACY_POLICY_PAGE_ID ?? "");
+    await renderPage('simple-page.ejs', {
+      description: documentToHtmlString(privacyPolicyEntry.fields.description as Document),
+      title: privacyPolicyEntry.fields.title
+    }, path.join(outputDir, 'privacy-policy.html'));
+
     // // Fetch data for destination page
     // const destinationPageEntry = await getEntry<ContentfulFields>('YOUR_DESTINATION_PAGE_ENTRY_ID');
     // await renderPage('destination.ejs', destinationPageEntry.fields, path.join(outputDir, 'destination.html'));

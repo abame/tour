@@ -1,60 +1,30 @@
-.about {
+.simple-page {
     text-align: center;
     margin-bottom: 40px;
     padding: 40px;
 }
 
-.about h1, .about h2 {
+.simple-page h1, .simple-page h2 {
     color: #ff6347;
     margin-bottom: 20px;
 }
 
-.about p {
+.simple-page p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.about ul {
+.simple-page ul {
     text-align: left;
     display: inline-block;
     margin-bottom: 40px;
 }
 
-.about ul li {
+.simple-page ul li {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 10px;
-}
-
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    margin: 20px;
-    text-align: center;
-    width: 150px;
-}
-
-.team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.team-member h3 {
-    font-size: 20px;
-    color: #ff4500;
-    margin: 10px 0 5px;
-}
-
-.team-member p {
-    font-size: 16px;
-    color: #555;
 }
 
 @media (max-width: 768px) {
