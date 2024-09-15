@@ -65,6 +65,13 @@ async function generatePages() {
       title: privacyPolicyEntry.fields.title
     }, path.join(outputDir, 'privacy-policy.html'));
 
+    // Fetch data for terms and conditions page
+    const termAndConditionsEntry = await getEntry<ContentfulFields>(process.env.TERMS_AND_CONDITIONS_PAGE_ID ?? "");
+    await renderPage('simple-page.ejs', {
+      description: documentToHtmlString(termAndConditionsEntry.fields.description as Document),
+      title: termAndConditionsEntry.fields.title
+    }, path.join(outputDir, 'terms-and-conditions.html'));
+
     // // Fetch data for destination page
     // const destinationPageEntry = await getEntry<ContentfulFields>('YOUR_DESTINATION_PAGE_ENTRY_ID');
     // await renderPage('destination.ejs', destinationPageEntry.fields, path.join(outputDir, 'destination.html'));

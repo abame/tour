@@ -47,6 +47,7 @@ jobs:
           ABOUT_PAGE_ID: ${{ secrets.ABOUT_PAGE_ID }}
           CONTACT_PAGE_ID: ${{ secrets.CONTACT_PAGE_ID }}
           PRIVACY_POLICY_PAGE_ID: ${{ secrets.PRIVACY_POLICY_PAGE_ID }}
+          TERMS_AND_CONDITIONS_PAGE_ID: ${{ secrets.TERMS_AND_CONDITIONS_PAGE_ID }}
         run: |
           yarn install
           yarn build
