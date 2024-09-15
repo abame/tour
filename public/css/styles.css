@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Exo2';
-    src: URL('fonts/Exo_2.ttf') format('truetype');
+    src: URL('../fonts/Exo_2.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'FiraSansExtraCondensed';
-    src: URL('fonts/Fira_Sans_Extra_Condensed.ttf') format('truetype');
+    src: URL('../fonts/Fira_Sans_Extra_Condensed.ttf') format('truetype');
 }
 
 body {
