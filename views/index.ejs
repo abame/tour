@@ -17,8 +17,12 @@
                 <%- htmlSubscribeIntro %>
             </div>
             <div class="subscribe">
-                <input type="text" placeholder="Insert Email Address"/>
-                <input type="submit" value="Sign Up"/>
+                <form action="https://formspree.io/f/xnnayopq" method="post" id="subscribe">
+                    <input type="email" name="email" required placeholder="Insert Email Address"/>
+                    <textarea name="message" style="display: none;">Email Subscribe</textarea>
+                    <input type="submit" value="Sign Up"/>
+                    <p id="subscribe-status" class="form-status"></p>
+                </form>
             </div>
         </section>
         <section id="packages" class="packages">
@@ -36,5 +40,7 @@
         </section>
     </main>
     <%- include('partials/footer') %>
+    <script  type="text/javascript" src="js/main.js"></script>
+    <script  type="text/javascript" src="js/homepage.js"></script>
 </body>
 </html>
