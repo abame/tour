@@ -11,20 +11,16 @@
 
 .simple-page p {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 .simple-page ul {
-    text-align: left;
     display: inline-block;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 .simple-page ul li {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
