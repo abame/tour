@@ -52,6 +52,11 @@
     background-color: #228b22;
 }
 
+footer {
+    bottom: 0;
+    position: absolute;
+}
+
 @media (max-width: 768px) {
     header nav {
         display: flex;

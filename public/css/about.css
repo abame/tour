@@ -57,6 +57,11 @@
     color: #555;
 }
 
+footer {
+    bottom: 0;
+    position: absolute;
+}
+
 @media (max-width: 768px) {
     header nav {
         display: flex;
