@@ -1,5 +1,4 @@
 .simple-page {
-    text-align: center;
     margin-bottom: 40px;
     padding: 40px;
 }
@@ -7,6 +6,7 @@
 .simple-page h1, .simple-page h2 {
     color: #ff6347;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .simple-page p {
