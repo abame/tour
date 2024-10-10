@@ -25,17 +25,11 @@
                 </form>
             </div>
         </section>
-        <section id="packages" class="packages">
-            <h2>Popular Destinations</h2>
-            <div class="package-list">
-                <% for(let i=0; i < destinations.length; i++) { %>
-                    <div class="package-item">
-                        <img src="https:<%= destinations[1].fields.image.fields.file.url %>" alt="Destination 1">
-                        <h3><%= destinations[i].fields.title %> </h3>
-                        <%- destinations[i].fields.htmlDescription %>
-                        <a href="comparison.html" class="details-button">View Packages</a>
-                    </div>
-                <% } %>
+        <section class="ourVision">
+            <h2>Our Vision</h2>
+            
+            <div class="text">
+                <%- htmlOurVision %>
             </div>
         </section>
     </main>

@@ -86,6 +86,22 @@ main {
     background-color: #228b22;
 }
 
+.ourVision {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ourVision h2 {
+    font-size: 36px;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.ourVision .text {
+    display: inline-block;
+    font-size: larger;
+}
+
 .packages {
     text-align: center;
     margin-bottom: 40px;
@@ -151,6 +167,10 @@ main {
     background-color: #007bb5;
 }
 
+footer {
+    bottom: 0;
+    position: absolute;
+}
 
 
 @media (max-width: 1024px) {

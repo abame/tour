@@ -35,6 +35,7 @@ async function generatePages() {
     // Fetch data for homepage
     const homepageEntry = await getEntry<ContentfulFields>(process.env.HOMEPAGE_ID ?? "");
     homepageEntry.fields.htmlSubscribeIntro = documentToHtmlString(homepageEntry.fields.subscribeIntro as Document ?? "");
+    homepageEntry.fields.htmlOurVision = documentToHtmlString(homepageEntry.fields.ourVision as Document ?? "");
     (homepageEntry.fields.destinations as unknown as Destination[]).forEach(element => {
       element.fields.htmlDescription = documentToHtmlString(element.fields.description ?? "");
     });
