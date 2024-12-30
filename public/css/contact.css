@@ -19,6 +19,7 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
+    padding: 5.95rem;
 }
 
 .contact-form label {
@@ -50,11 +51,6 @@
 
 .contact-form button:hover {
     background-color: #228b22;
-}
-
-footer {
-    bottom: 0;
-    position: absolute;
 }
 
 @media (max-width: 768px) {

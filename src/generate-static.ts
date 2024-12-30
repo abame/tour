@@ -47,6 +47,7 @@ async function generatePages() {
       aboutUs: documentToHtmlString(aboutPageEntry.fields.aboutUs as Document),
       ourStory: documentToHtmlString(aboutPageEntry.fields.ourStory as Document),
       whyUs: documentToHtmlString(aboutPageEntry.fields.whyUs as Document),
+      ourTeamPromise: documentToHtmlString(aboutPageEntry.fields.ourTeamPromise as Document),
       ourTeam: aboutPageEntry.fields.ourTeam,
       title: aboutPageEntry.fields.title
     }, path.join(outputDir, 'about.html'));
