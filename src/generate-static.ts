@@ -73,6 +73,11 @@ async function generatePages() {
       description: documentToHtmlString(termAndConditionsEntry.fields.description as Document),
       title: termAndConditionsEntry.fields.title
     }, path.join(outputDir, 'terms-and-conditions.html'));
+  
+    // Generate static comparison package
+    await renderPage('compare.ejs', {
+      title: 'Compare Packages'
+    }, path.join(outputDir, 'compare-packages.html'));
 
     // // Fetch data for destination page
     // const destinationPageEntry = await getEntry<ContentfulFields>('YOUR_DESTINATION_PAGE_ENTRY_ID');

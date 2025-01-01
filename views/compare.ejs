@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVersus - <%- title %></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-black.png">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <section class="contact">
+                <h1><%- title %></h1>
+                <!-- modify this form HTML and place wherever you want your form -->
+                <form action="https://formspree.io/f/mpwwoajo" method="POST" class="contact-form" id="compare-packages">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label>Agencies:</label>
+                    <input type="agencies" name="agencies" placeholder="TUI, Lastminute, ..."/>
+                    <label>Destination:</label>
+                    <input type="text" name="destination" />
+                    <button id="my-form-button">Sent Comparison Request</button>
+                    <p id="compare-packages-status"></p>
+                </form>
+            </section>
+        </main>
+        <%- include('partials/footer') %>
+            <!-- Place this script at the end of the body tag -->
+            <script type="text/javascript" src="js/main.js"></script>
+            <!-- Place this script at the end of the body tag -->
+            <script>
+                document.getElementById("compare-packages").addEventListener("submit", handleSubmit)
+            </script>
+</body>
+
+</html>
