@@ -19,14 +19,17 @@
                 <form action="https://formspree.io/f/mpwwoajo" method="POST" class="contact-form" id="compare-packages">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required>
-    
+
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" required>
 
                     <label>Agencies:</label>
-                    <input type="agencies" name="agencies" placeholder="TUI, Lastminute, ..."/>
+                    <input type="agencies" name="agencies" placeholder="TUI, Lastminute, ..." />
                     <label>Destination:</label>
-                    <input type="text" name="destination" />
+                    <input type="text" name="destination" placeholder="City or place" />
+                    <div class="g-recaptcha" data-sitekey="6Lda36wqAAAAAMMotIUmgff47HeEacf10V5nq_-0"></div>
+                    <!-- replace with your recaptcha SITE key not secret key -->
+                    <br />
                     <button id="my-form-button">Sent Comparison Request</button>
                     <p id="compare-packages-status"></p>
                 </form>
