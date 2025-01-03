@@ -1,5 +1,6 @@
 .contact {
     text-align: center;
+    margin-bottom: 1.45rem;
 }
 
 .contact h1 {
@@ -17,6 +18,7 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
+    padding: 5.95rem;
 }
 
 .contact-form label {
