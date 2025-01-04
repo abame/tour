@@ -22,14 +22,3 @@
 .simple-page ul li {
     font-size: 18px;
 }
-
-@media (max-width: 768px) {
-    header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav a {
-        margin: 10px 0;
-    }
-}
