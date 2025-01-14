@@ -1,0 +1,114 @@
+[
+    {
+        "Region": "Europe",
+        "Destinations": [
+            {
+                "Country": "Spain", 
+                "Places": [
+                    {"Place": "Mallorca", "Destinations": ["Palma de Mallorca", "Alcudia", "Magaluf", "Soller"]},
+                    {"Place": "Ibiza", "Destinations": ["Ibiza Town", "San Antonio", "Santa Eulalia", "Es Cana"]},
+                    {"Place": "Tenerife", "Destinations": ["Santa Cruz", "Puerto de la Cruz", "Costa Adeje", "Los Cristianos"]},
+                    {"Place": "Gran Canaria", "Destinations": ["Las Palmas", "Maspalomas", "Maspalomas Dunes", "Puerto Rico"]},
+                    {"Place": "Barcelona", "Destinations": ["La Sagrada Familia", "Park Güell", "Barri Gòtic", "Montjuïc"]},
+                    {"Place": "Madrid", "Destinations": ["Puerta del Sol", "Retiro Park", "Royal Palace", "Plaza Mayor"]},
+                    {"Place": "Seville", "Destinations": ["Alcazar of Seville", "Seville Cathedral", "Plaza de España", "Barrio Santa Cruz"]}
+                ]
+            },
+            {
+                "Country": "Italy", 
+                "Places": [
+                    {"Place": "Rome", "Destinations": ["Colosseum", "Vatican City", "Pantheon", "Roman Forum"]},
+                    {"Place": "Venice", "Destinations": ["St. Mark's Square", "Rialto Bridge", "Grand Canal", "Murano"]},
+                    {"Place": "Florence", "Destinations": ["Uffizi Gallery", "Duomo di Firenze", "Ponte Vecchio", "Palazzo Pitti"]},
+                    {"Place": "Tuscany", "Destinations": ["Siena", "Pisa", "Chianti region", "San Gimignano"]},
+                    {"Place": "Amalfi Coast", "Destinations": ["Positano", "Ravello", "Amalfi", "Praiano"]},
+                    {"Place": "Milan", "Destinations": ["Duomo di Milano", "Sforza Castle", "Galleria Vittorio Emanuele II", "Navigli"]},
+                    {"Place": "Sicily", "Destinations": ["Palermo", "Taormina", "Mount Etna", "Catania"]}
+                ]
+            },
+            {
+                "Country": "Greece", 
+                "Places": [
+                    {"Place": "Santorini", "Destinations": ["Oia", "Fira", "Kamari", "Red Beach"]},
+                    {"Place": "Mykonos", "Destinations": ["Mykonos Town", "Super Paradise Beach", "Little Venice", "Windmills of Mykonos"]},
+                    {"Place": "Crete", "Destinations": ["Heraklion", "Chania", "Rethymnon", "Elafonissi Beach"]},
+                    {"Place": "Athens", "Destinations": ["Acropolis", "Parthenon", "Plaka", "Temple of Olympian Zeus"]},
+                    {"Place": "Rhodes", "Destinations": ["Rhodes Town", "Lindos", "Ancient Kamiros", "Seven Springs"]},
+                    {"Place": "Corfu", "Destinations": ["Corfu Town", "Paleokastritsa", "Achilleion Palace", "Kanoni"]}
+                ]
+            },
+            {
+                "Country": "France", 
+                "Places": [
+                    {"Place": "Paris", "Destinations": ["Eiffel Tower", "Louvre Museum", "Montmartre", "Champs-Élysées"]},
+                    {"Place": "French Riviera", "Destinations": ["Nice", "Cannes", "Saint-Tropez", "Monaco"]},
+                    {"Place": "Provence", "Destinations": ["Aix-en-Provence", "Avignon", "Lavender Fields", "Gorges du Verdon"]},
+                    {"Place": "Bordeaux", "Destinations": ["Place de la Bourse", "Pont de Pierre", "Saint-Émilion", "Cité du Vin"]},
+                    {"Place": "Lyon", "Destinations": ["Old Lyon", "Basilica of Notre-Dame de Fourvière", "Parc de la Tête d'Or"]},
+                    {"Place": "Normandy", "Destinations": ["Mont Saint-Michel", "D-Day Landing Beaches", "Rouen", "Honfleur"]}
+                ]
+            }
+        ]
+    },
+    {
+        "Region": "Global",
+        "Destinations": [
+            {
+                "Country": "USA", 
+                "Places": [
+                    {"Place": "New York", "Destinations": ["Times Square", "Central Park", "Statue of Liberty", "Empire State Building"]},
+                    {"Place": "Los Angeles", "Destinations": ["Hollywood", "Santa Monica Pier", "Venice Beach", "Griffith Observatory"]},
+                    {"Place": "Las Vegas", "Destinations": ["The Strip", "Bellagio Fountains", "Fremont Street", "Red Rock Canyon"]},
+                    {"Place": "San Francisco", "Destinations": ["Golden Gate Bridge", "Alcatraz Island", "Fisherman's Wharf", "Lombard Street"]},
+                    {"Place": "Grand Canyon", "Destinations": ["South Rim", "North Rim", "Havasu Falls", "Bright Angel Trail"]},
+                    {"Place": "Orlando", "Destinations": ["Walt Disney World", "Universal Studios", "Epcot", "SeaWorld"]},
+                    {"Place": "Chicago", "Destinations": ["Millennium Park", "Navy Pier", "Willis Tower Skydeck", "Lake Michigan"]}
+                ]
+            },
+            {
+                "Country": "Thailand", 
+                "Places": [
+                    {"Place": "Bangkok", "Destinations": ["Grand Palace", "Wat Pho", "Chatuchak Market", "Chao Phraya River"]},
+                    {"Place": "Phuket", "Destinations": ["Patong Beach", "Phang Nga Bay", "Old Phuket Town", "Big Buddha"]},
+                    {"Place": "Chiang Mai", "Destinations": ["Doi Suthep", "Old City", "Elephant Nature Park", "Night Bazaar"]},
+                    {"Place": "Krabi", "Destinations": ["Railay Beach", "Phi Phi Islands", "Ao Nang", "Emerald Pool"]},
+                    {"Place": "Pattaya", "Destinations": ["Pattaya Beach", "Sanctuary of Truth", "Walking Street", "Jomtien Beach"]}
+                ]
+            },
+            {
+                "Country": "Turkey", 
+                "Places": [
+                    {"Place": "Istanbul", "Destinations": ["Hagia Sophia", "Topkapi Palace", "Blue Mosque", "Bosphorus Strait"]},
+                    {"Place": "Cappadocia", "Destinations": ["Göreme", "Hot Air Balloon Ride", "Uchisar Castle", "Derinkuyu Underground City"]},
+                    {"Place": "Antalya", "Destinations": ["Kaleiçi", "Düden Waterfalls", "Lara Beach", "Hadrian's Gate"]},
+                    {"Place": "Ephesus", "Destinations": ["Temple of Artemis", "Celsus Library", "Great Theatre", "House of Virgin Mary"]},
+                    {"Place": "Bodrum", "Destinations": ["Bodrum Castle", "Mausoleum at Halicarnassus", "Gumbet Beach", "Bodrum Marina"]}
+                ]
+            }
+        ]
+    },
+    {
+        "Region": "Adventure and Specialized",
+        "Destinations": [
+            {
+                "Country": "South Africa", 
+                "Places": [
+                    {"Place": "Cape Town", "Destinations": ["Table Mountain", "V&A Waterfront", "Robben Island", "Kirstenbosch Gardens"]},
+                    {"Place": "Kruger National Park", "Destinations": ["Sabie River", "Skukuza", "Crocodile Bridge", "Hazyview"]},
+                    {"Place": "Johannesburg", "Destinations": ["Apartheid Museum", "Gold Reef City", "Constitution Hill", "Nelson Mandela Square"]},
+                    {"Place": "Garden Route", "Destinations": ["Knysna", "Plettenberg Bay", "Tsitsikamma National Park", "Mossel Bay"]}
+                ]
+            },
+            {
+                "Country": "Peru", 
+                "Places": [
+                    {"Place": "Machu Picchu", "Destinations": ["Inca Trail", "Sun Gate", "Temple of the Sun", "Intihuatana"]},
+                    {"Place": "Cusco", "Destinations": ["Sacsayhuamán", "Plaza de Armas", "Qorikancha", "San Pedro Market"]},
+                    {"Place": "Lima", "Destinations": ["Plaza Mayor", "Huaca Pucllana", "Barranco District", "Lima Cathedral"]},
+                    {"Place": "Sacred Valley", "Destinations": ["Ollantaytambo", "Pisac", "Moray", "Chinchero"]},
+                    {"Place": "Lake Titicaca", "Destinations": ["Uros Islands", "Taquile Island", "Puno", "Sillustani"]}
+                ]
+            }
+        ]
+    }
+]
