@@ -28,7 +28,7 @@
     color: #555;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea, .contact-form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -50,4 +50,17 @@
 
 .contact-form button:hover {
     background-color: #228b22;
+}
+
+fieldset {
+    padding: 2.5rem;
+    width: 90%;
+}
+
+fieldset input {
+    width: 95% !important;
+}
+
+.contact-form select {
+    width: 104%;
 }
